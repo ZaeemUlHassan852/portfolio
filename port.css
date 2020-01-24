@@ -89,7 +89,7 @@ header .navbar ul li a:hover::before{
 }
 .home{
 	min-height: 100vh;
-	background-image: url("banner1.jpg");
+	background-image: url("images/banner1.jpg");
 	background-size: cover;
 	background-position: center;
 	float: left;
@@ -287,20 +287,11 @@ background-color:transparent;
 	padding:30px;
 	position: relative;
 }
-.services .services-content .card .box::before{
-	content:'';
-	position: absolute;
-	left:0;
-	bottom:0px;
-	height: 3px;
-	width:0;
-	background-color: #000;
-	z-index:1;
-	transition: width .5s ease;
+.services .services-content .card .box:hover{
+	border-radius:5px 90px 5px;
+transition:0.5s;
 }
-.services .services-content .card .box:hover::before{
-	width: 100%;
-}
+
 
 .services .services-content .card .box .icon{
 	text-align: center;
@@ -492,6 +483,7 @@ background-color:transparent;
 .contact .contact-content input:focus,
 .contact .contact-content textarea:focus{
  border-color:#05c46b;
+
 }
 .contact .contact-content textarea{
 	height: 100px;
@@ -523,7 +515,7 @@ footer .social-links{
 	float:left;
 	width: 100%;
 	text-align: center;
-	border-top:1px solid #353535;
+	border-top:2px solid #000;
 	padding-top:15px;
 }
 footer .social-links ul{
